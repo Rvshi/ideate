@@ -1,6 +1,7 @@
 $(function () {
 	var types = ['SPEAKER', 'ORGANIZER', 'PARTICIPANT'];
-
+	var fontSize = 4.9;
+	
 	$("#type").click(function () {
 		var n = types.indexOf($("#type").html());
 		if (n == types.length - 1) n = 0;
@@ -19,26 +20,26 @@ $(function () {
 	}
 
 	var formData = {
-		"season": "spring",
-		"event_type": "design_con",
-		"year": 2016,
-		"email": "ownz.andy@gmail.com"
-	}
-/*
-	$.ajax({
-		url: "http://hackduke-backend.herokuapp.com/participants/get_participant",
-		type: "POST",
-		dataType: 'jsonp',
-		contentType: "application/json",
-		data: formData,
-		success: function (data, textStatus, jqXHR) {
-			console.log('hi')
-		},
-		error: function (jqXHR, textStatus, errorThrown) {}
-	});
+			"season": "spring",
+			"event_type": "design_con",
+			"year": 2016,
+			"email": "ownz.andy@gmail.com"
+		}
+		/*
+			$.ajax({
+				url: "http://hackduke-backend.herokuapp.com/participants/get_participant",
+				type: "POST",
+				dataType: 'jsonp',
+				contentType: "application/json",
+				data: formData,
+				success: function (data, textStatus, jqXHR) {
+					console.log('hi')
+				},
+				error: function (jqXHR, textStatus, errorThrown) {}
+			});
 
-*/
-	// Checkin and Print
+		*/
+		// Checkin and Print
 	$('#print').click(function () {
 		if ($("#type").html() != "ADMIN") {
 			query = $("#search input").val();

@@ -143,6 +143,7 @@ body {
 }
 
 #type {
+	display: inline-block;
 	font-size: 1em;
 	cursor: pointer;
 	vertical-align: top;
@@ -150,18 +151,6 @@ body {
 	z-index: 999;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-}
-
-#line {
-	z-index: 998;
-	margin: 0 auto;
-	width: 90%;
-	border-top: .18em white solid;
-	height: 0px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: .95em;
 }
 
 .eContact {
